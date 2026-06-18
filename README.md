@@ -26,9 +26,11 @@ Ao executar a analise, o notebook:
 
 ## Arquivos principais
 
-- `analise-financeira.ipynb`: notebook principal com as celulas executadas e saidas salvas.
+### Requisitos obrigatórios:
 - `transacoes.csv`: base de exemplo com registros validos e invalidos.
-- `analise_clearbank.py`: modulo com as funcoes usadas no notebook.
-- `analise_pandas.py`: versao opcional com pandas e matplotlib.
+- `analise-financeira.ipynb`: notebook principal com as celulas executadas e saidas salvas. Utiliza `csv.DictReader` para ler o arquivo CSV.
 - `relatorio.json`: arquivo gerado pela execucao da analise.
-- `grafico.png`: grafico de barras com o saldo mensal.
+
+### Requisitos opcionais:
+- `analise_pandas.py`: versao com pandas e matplotlib.
+- `grafico.png`: grafico de barras com o saldo mensal ( crédito - débito por mês ).
